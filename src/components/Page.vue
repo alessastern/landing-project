@@ -2,10 +2,11 @@
   <Header @link-click="setFocus" />
   <div class="container">
     <Gallery ref="Home" :slides="slides" :interval="3000" controls indicators />
-    <h2 class="title">i made dis</h2>
+    <h2 class="title">Check out our best works</h2>
     <Text ref="About" :about="about" />
     <FeedbackForm ref="Feedback" />
   </div>
+  <div class="footer">2025</div>
 </template>
 
 <script>
@@ -34,3 +35,19 @@ export default {
   },
 };
 </script>
+
+<style>
+.footer {
+  text-align: center;
+  color: var(--warm);
+  margin: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  height: 4vh;
+  background-color: var(--accent);
+  z-index: 100;
+  cursor: default;
+}
+</style>

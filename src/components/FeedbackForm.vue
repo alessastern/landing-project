@@ -2,17 +2,17 @@
   <form class="feedback">
     <label>Name</label>
     <input type="text" required placeholder="Ur name" />
-    <label>Wat u want</label>
+    <label>Your ideas</label>
     <textarea
-      placeholder="Tell us what u'd like to see...Max length - 300 characters"
+      placeholder="Tell us what you'd like to see...Max length - 300 characters"
       maxlength="300"
     ></textarea>
     <label>First time?</label>
     <select v-model="status">
-      <option value="new">Yes, I am new</option>
-      <option value="regular">I am already the Smesharik</option>
+      <option value="new">I am new</option>
+      <option value="regular">I am a member</option>
     </select>
-    <div class="submit"><button>INTERACTION!!!</button></div>
+    <div class="submit"><button>Send</button></div>
   </form>
 </template>
 
@@ -32,17 +32,18 @@ export default {
 .feedback {
   padding: 20px 40px;
   max-width: 50%;
+  min-width: fit-content;
   text-align: left;
   justify-self: center;
   border-radius: 10px;
   margin: 30px;
-  background: var(--light);
+  background: rgba(233, 227, 255, 50%);
 }
 textarea {
   margin: 10px 0;
   display: block;
   resize: none;
-  width: 600px;
+  width: 400px;
   height: 200px;
   border: none;
   border-bottom: 1px solid var(--accent);
